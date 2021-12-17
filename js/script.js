@@ -2,7 +2,7 @@
 // funzione evento cambio colore al click del box
 function createEvent(element) {
     element.addEventListener('click', function() {
-        this.classList.toggle('green');
+        this.classList.toggle('box-bg-color');
     })
 }
 

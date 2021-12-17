@@ -25,6 +25,26 @@ body{
     height: 80px;
     border: 2px solid #fff;
 }
-.box.green{
+.box.box-bg-color{
+    background-color: #00bcad;
+}
+.buttons-container{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    margin: 15px;
+    padding: 8px;
+    font-size: 25px;
+    color: #fff;
     background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+h2{
+    margin: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
 }

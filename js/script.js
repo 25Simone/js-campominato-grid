@@ -16,6 +16,7 @@ function createNewBox(container){
 
 // funzione per definire il numero di massimo di celle nella griglia
 function createGrid(maxCell) {
+    boxContainer.innerHTML = '';
     for (let i = 0; i < maxCell; i++) {
         createNewBox(boxContainer);
     }
@@ -34,13 +35,19 @@ const button3 = document.getElementById('button-level3');
 // definisco gli eventi click dei tre bottoni
 button1.addEventListener('click', function() {
     createGrid(100);
-    boxContainer.classList.toggle('level1');
+    boxContainer.classList.add('level1');
+    boxContainer.classList.remove('level2');
+    boxContainer.classList.remove('level3');
 })
 button2.addEventListener('click', function() {
     createGrid(81);
-    boxContainer.classList.toggle('level2');
+    boxContainer.classList.add('level2');
+    boxContainer.classList.remove('level1');
+    boxContainer.classList.remove('level3');
 })
 button3.addEventListener('click', function() {
     createGrid(49);
-    boxContainer.classList.toggle('level3');
+    boxContainer.classList.add('level3');
+    boxContainer.classList.remove('level1');
+    boxContainer.classList.remove('level2');
 })
